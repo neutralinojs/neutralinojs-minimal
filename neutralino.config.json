@@ -24,7 +24,7 @@
     },
     "cli": {
         "binaryName": "neutralino",
-        "resourcesPath": "/resources",
+        "resourcesPath": "/resources/",
         "clientLibrary": "/resources/js/neutralino.js"
     }
 }
