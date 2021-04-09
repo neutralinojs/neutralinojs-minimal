@@ -11,9 +11,5 @@ window.myApp = {
     }
 };
 
-
-Neutralino.init({
-    onSuccess: () => {
-        window.myApp.showInfo();
-    }
-});
+Neutralino.init();
+window.myApp.showInfo();
