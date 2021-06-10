@@ -1,2 +1,9 @@
+# Developer tools' files
 .lite_workspace.lua
+
+# Neutralinojs binaries
 /bin
+
+# Neutralinojs related files
+.storage
+*.log
