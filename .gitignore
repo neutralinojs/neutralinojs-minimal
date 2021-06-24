@@ -5,6 +5,9 @@
 /bin
 /dist
 
+# Neutralinojs client (minified)
+neutralino.js
+
 # Neutralinojs related files
 .storage
 *.log
