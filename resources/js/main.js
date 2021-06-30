@@ -4,12 +4,17 @@ window.myApp = {
         document.getElementById('info').innerHTML = `
             ${NL_APPID} is running on port ${NL_PORT}  inside ${NL_OS} 
             <br/><br/>
-            <span>server: v${NL_VERSION} | client: v${NL_CVERSION}</span>
+            <span>server: v${NL_VERSION} . client: v${NL_CVERSION}</span>
             `;
     },
     openDocs: () => {
         Neutralino.app.open({
             url: "https://neutralino.js.org/docs"
+        });
+    },
+    openTutorial: () => {
+        Neutralino.app.open({
+            url: "https://www.youtube.com/watch?v=txDlNNsgSh8&list=PLvTbqpiPhQRb2xNQlwMs0uVV0IN8N-pKj"
         });
     },
     setTray: () => {
