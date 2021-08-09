@@ -31,12 +31,9 @@ window.myApp = {
             ]
         };
         Neutralino.os.setTray(tray);
-    }
-};
-
-Neutralino.events = {
-    onTrayMenuItemClicked: (menuItem) => {
-        switch(menuItem.id) {
+    },
+    onTrayMenuItemClicked: (event) => {
+        switch(event.detail.id) {
             case "VERSION":
                 Neutralino.os.showMessageBox({
                     type: "INFO",
@@ -52,5 +49,6 @@ Neutralino.events = {
 };
 
 Neutralino.init();
+Neutralino.events.on("trayMenuItemClicked", myApp.onTrayMenuItemClicked);
 window.myApp.setTray();
 window.myApp.showInfo();
