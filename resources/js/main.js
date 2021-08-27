@@ -45,10 +45,14 @@ window.myApp = {
                 Neutralino.app.exit();
                 break;
         }
+    },
+    onWindowClose: () => {
+        Neutralino.app.exit();
     }
 };
 
 Neutralino.init();
 Neutralino.events.on("trayMenuItemClicked", myApp.onTrayMenuItemClicked);
+Neutralino.events.on("windowClose", myApp.onWindowClose);
 window.myApp.setTray();
 window.myApp.showInfo();
