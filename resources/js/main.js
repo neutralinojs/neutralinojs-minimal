@@ -54,5 +54,5 @@ window.myApp = {
 Neutralino.init();
 Neutralino.events.on("trayMenuItemClicked", myApp.onTrayMenuItemClicked);
 Neutralino.events.on("windowClose", myApp.onWindowClose);
-window.myApp.setTray();
+//window.myApp.setTray(); Uncomment to enable the tray menu.
 window.myApp.showInfo();
