@@ -44,10 +44,17 @@ window.myApp = {
     }
 };
 
-Neutralino.init();
+// Initialize native API communication. This is non-blocking
+// use 'ready' event to run code on app load.
+// Avoid calling API functions before init or after init.
+Neutralino.init(); 
+
 Neutralino.events.on("trayMenuItemClicked", myApp.onTrayMenuItemClicked);
 Neutralino.events.on("windowClose", myApp.onWindowClose);
-if(NL_OS != "Darwin") {
-    window.myApp.setTray();
-}
+Neutralino.events.on("ready", () => {
+    if(NL_OS != "Darwin") { // TODO: Fix https://github.com/neutralinojs/neutralinojs/issues/615
+        window.myApp.setTray();
+    }
+})
+
 window.myApp.showInfo();
