@@ -8,10 +8,10 @@ window.myApp = {
             `;
     },
     openDocs: () => {
-        Neutralino.app.open("https://neutralino.js.org/docs");
+        Neutralino.os.open("https://neutralino.js.org/docs");
     },
     openTutorial: () => {
-        Neutralino.app.open("https://www.youtube.com/watch?v=txDlNNsgSh8&list=PLvTbqpiPhQRb2xNQlwMs0uVV0IN8N-pKj");
+        Neutralino.os.open("https://www.youtube.com/watch?v=txDlNNsgSh8&list=PLvTbqpiPhQRb2xNQlwMs0uVV0IN8N-pKj");
     },
     setTray: () => {
         if(NL_MODE != "window") {
