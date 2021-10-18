@@ -8,14 +8,10 @@ window.myApp = {
             `;
     },
     openDocs: () => {
-        Neutralino.app.open({
-            url: "https://neutralino.js.org/docs"
-        });
+        Neutralino.app.open("https://neutralino.js.org/docs");
     },
     openTutorial: () => {
-        Neutralino.app.open({
-            url: "https://www.youtube.com/watch?v=txDlNNsgSh8&list=PLvTbqpiPhQRb2xNQlwMs0uVV0IN8N-pKj"
-        });
+        Neutralino.app.open("https://www.youtube.com/watch?v=txDlNNsgSh8&list=PLvTbqpiPhQRb2xNQlwMs0uVV0IN8N-pKj");
     },
     setTray: () => {
         if(NL_MODE != "window") {
@@ -35,11 +31,8 @@ window.myApp = {
     onTrayMenuItemClicked: (event) => {
         switch(event.detail.id) {
             case "VERSION":
-                Neutralino.os.showMessageBox({
-                    type: "INFO",
-                    title: "Version information",
-                    content: `Neutralinojs server: v${NL_VERSION} | Neutralinojs client: v${NL_CVERSION}` 
-                });
+                Neutralino.os.showMessageBox("Version information",
+                    `Neutralinojs server: v${NL_VERSION} | Neutralinojs client: v${NL_CVERSION}`);
                 break;
             case "QUIT":
                 Neutralino.app.exit();
@@ -54,5 +47,7 @@ window.myApp = {
 Neutralino.init();
 Neutralino.events.on("trayMenuItemClicked", myApp.onTrayMenuItemClicked);
 Neutralino.events.on("windowClose", myApp.onWindowClose);
-//window.myApp.setTray(); Uncomment to enable the tray menu.
+if(NL_OS != "Darwin") {
+    window.myApp.setTray();
+}
 window.myApp.showInfo();
