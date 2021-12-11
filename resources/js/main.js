@@ -1,6 +1,6 @@
 // This is just a sample app. You can structure your Neutralinojs app code as you wish.
 // This example app is written with vanilla JavaScript and HTML.
-// Fee free to use any frontend framework you like :)
+// Feel free to use any frontend framework you like :)
 
 function showInfo() {
     document.getElementById('info').innerHTML = `
