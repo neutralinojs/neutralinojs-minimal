@@ -11,7 +11,10 @@
         "enabled": true,
         "writeToLogFile": true
     },
-    "nativeBlockList": [],
+    "nativeAllowList": [
+        "app.*",
+        "os.*"
+    ],
     "globalVariables": {
         "TEST1": "Hello",
         "TEST2": [2, 4, 5],
