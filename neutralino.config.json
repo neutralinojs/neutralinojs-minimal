@@ -13,7 +13,8 @@
     },
     "nativeAllowList": [
         "app.*",
-        "os.*"
+        "os.*",
+        "extensions.*"
     ],
     "globalVariables": {
         "TEST1": "Hello",
