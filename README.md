@@ -4,8 +4,8 @@ The default template for a Neutralinojs app. It's possible to use your favorite 
 
 ## Contributors
 
-<a href="https://github.com/neutralinojs/neutralinojs/graphs/contributors">
-  <img src="https://contributors-img.firebaseapp.com/image?repo=neutralinojs/neutralinojs" />
+<a href="https://github.com/neutralinojs/neutralinojs-minimal/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=neutralinojs/neutralinojs-minimal" />
 </a>
 
 ## License
