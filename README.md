@@ -2,9 +2,7 @@
 
 The default template for a Neutralinojs app. It's possible to use your favorite frontend framework by using [these steps](https://neutralino.js.org/docs/how-to/use-a-frontend-library).
 
-## Contributing
-
-Neutralinojs contributors:
+## Contributors
 
 <a href="https://github.com/neutralinojs/neutralinojs/graphs/contributors">
   <img src="https://contributors-img.firebaseapp.com/image?repo=neutralinojs/neutralinojs" />
