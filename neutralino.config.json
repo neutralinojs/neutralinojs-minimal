@@ -4,6 +4,7 @@
     "defaultMode": "window",
     "port": 0,
     "documentRoot": "/resources/",
+    "distributionPath": "/dist/",
     "url": "/",
     "enableServer": true,
     "enableNativeAPI": true,

@@ -3,6 +3,7 @@
 
 # Neutralinojs binaries and builds
 /bin
+# Make sure to edit this in case custom distribution path is specified in the config file
 /dist
 
 # Neutralinojs client (minified)
