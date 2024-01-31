@@ -16,7 +16,7 @@ function openDocs() {
 }
 
 function openTutorial() {
-    Neutralino.os.open("https://www.youtube.com/watch?v=txDlNNsgSh8&list=PLvTbqpiPhQRb2xNQlwMs0uVV0IN8N-pKj");
+    Neutralino.os.open("https://www.youtube.com/c/CodeZri");
 }
 
 function setTray() {
